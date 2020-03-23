@@ -38,4 +38,4 @@ If you need an android hotspot, try <a href="https://github.com/jwise/HoRNDIS/is
 <p align="center">&nbsp;</p>
 
 <h1 align="center">Credits</h1>
-<b>Huge thanks</b> to <a href="t.me/dreamandcode">Dreamandcode</a>, he helped me in making this efi and explaining every single process.
+<b>Huge thanks</b> to <a href="https://github.com/dreamwhite">Dreamwhite</a>, he helped me in making this efi and explaining every single process.
