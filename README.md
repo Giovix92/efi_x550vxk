@@ -9,13 +9,13 @@
 - Battery percentage
 - Keyboard
 - USB
+- HDMI
+- Trackpad (with gestures)
 
 <h3>What's NOT working:</h3>
 
 - WiFi (buy a different card)
-- HDMI
-- HDMI Audio
-- Trackpad
+- HDMI audio
 
 <h1 align="center">How to use it</h1>
 
