@@ -33,7 +33,7 @@ If you can't type proper characters using your USB keyboard, try switching Key R
 <p align="center">&nbsp;</p>
 This will be updated as soon as I'll find some fixes.
 <p align="center">&nbsp;</p>
-Current clover version: v5106
+Current clover version: v5107
 If you need an android hotspot, try <a href="https://github.com/jwise/HoRNDIS/issues/102#issuecomment-541237232">this HoRNDIS package</a>, designed for Catalina. Tested w/ Xiaomi Mi A1, running Android 10.
 <p align="center">&nbsp;</p>
 
