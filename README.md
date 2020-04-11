@@ -16,6 +16,7 @@
 
 - WiFi (buy a different card)
 - HDMI audio
+- Boot through HDMI
 
 <h1 align="center">How to use it</h1>
 
