@@ -1,42 +1,47 @@
-<h1 align="center">EFI for X550VXK, MacOS Catalina</h1>
+# EFI for X550VX, MacOS Big Sur (11.6)
 
-<h3>What's working:</h3>
+## Hardware specs
+
+|   Specifications    |                           Details                            |
+| :-----------------: | :----------------------------------------------------------: |
+|         CPU         | Intel Core [i7-7700HQ](https://ark.intel.com/content/www/it/it/ark/products/97185/intel-core-i7-7700hq-processor-6m-cache-up-to-3-80-ghz.html) |
+|        iGPU         |                         Intel HD 630                         |
+|         RAM         |                 4GB DDR4 2400MHz, up to 20GB                 |
+|     Audio Codec     |                        Realtek ALC255                        |
+| Stock wireless card |              Realtek RTL8821ae, NOT COMPATIBLE.              |
+|      Trackpad       |                        FTC1010 (PS/2)                        |
+|      Keyboard       |                Standard Asus Keyboard (PS/2)                 |
+|   SD Card Reader    |                    Realtek SD Card Reader                    |
+
+- Suggested wireless card: Azurewave AW-CE123H
+
+## What's working:
 
 - GPU (full QE/CI)
 - Audio
-- Brightness
+- Brightness (including brightness keys)
 - Sleep and resume
 - Battery percentage
 - Keyboard
-- USB
-- HDMI
+- USB (both 2.0 and 3.1 gen2)
+- HDMI (ONLY IF CONNECTED **AFTER BOOTING**)
 - Trackpad (with gestures)
 
-<h3>What's NOT working:</h3>
+## What's not working:
 
-- WiFi (buy a different card)
+- WiFi (as expected)
 - HDMI audio
 - Boot through HDMI
 
-<h1 align="center">How to use it</h1>
+## How to use it:
 
-- Make sure you're on the latest bios (exact model: K550VXK-GO405T)
-- Download this repo as a zip file and put it in your EFI/CLOVER folder!
-- Reboot in Clover, open the UEFI Shell (the 1st button in the 2nd line)
-- Go into your EFI folder. You'll need to search it using cd and ls. In order to switch partitions, use <b>FS0:</b>, <b>FS1:</b> and so on.
-- CD into EFI/CLOVER/tools, then type "VerifyMsrE2.efi" without quotes. It should output something like "LOCKED". If it shows "UNLOCKED", then skip this process.
-- Now type "modGRUBShell.efi" without quotes, and afterwards type "setup_var 0x503 0x0", still without quotes.
-- Reboot twice
-<p align="center">&nbsp;</p>
+- Download the latest version of OpenCore from [here](https://github.com/acidanthera/OpenCorePkg/releases/latest)
+- Place those files inside OC folder
+- Put both OC and BOOT folders inside a new EFI folder
+- Lastly put the EFI folder inside your USB/drive EFI partition and reboot!
 
-<h1 align="center">Useful informations</h1>
-If you can't type proper characters using your USB keyboard, try switching Key Rollover method (if any), from N-Key rollover to 6-Key rollover. Seems that MacOS has some problems in recognizing correct characters while using N-Key rollover.
-<p align="center">&nbsp;</p>
-This will be updated as soon as I'll find some fixes.
-<p align="center">&nbsp;</p>
-Current clover version: v5107
-If you need an android hotspot, try <a href="https://github.com/jwise/HoRNDIS/issues/102#issuecomment-541237232">this HoRNDIS package</a>, designed for Catalina. Tested w/ Xiaomi Mi A1, running Android 10.
-<p align="center">&nbsp;</p>
+## Useful infos
 
-<h1 align="center">Credits</h1>
-<b>Huge thanks</b> to <a href="https://github.com/dreamwhite">Dreamwhite</a>, he helped me in making this efi and explaining every single process.
+- I've already added the latest HoRNDIS kext in order to use an Android phone (via USB tethering) for connecting to internet.
+- If you can't type proper characters using your USB keyboard, try switching Key Rollover method (if any), from N-Key rollover to 6-Key rollover. Seems that MacOS has some problems in recognizing correct characters while using N-Key rollover.
+
