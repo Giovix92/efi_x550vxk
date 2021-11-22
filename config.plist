@@ -150,15 +150,15 @@
 				<data>AAAbWQ==</data>
 				<key>#1 0306-&gt;0105</key>
 				<string>0x591b0000, 0105 instead of 0306, HDMI</string>
-				<key>#1 framebuffer-con1-enable</key>
-				<integer>1</integer>
-				<key>#1 framebuffer-con1-alldata</key>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-alldata</key>
 				<data>AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAgAAAA</data>
 				<key>#2 0204-&gt;0105</key>
 				<string>0x591b0000, 0105 instead of 0204, HDMI</string>
-				<key>#2 framebuffer-con2-enable</key>
-				<integer>1</integer>
-				<key>#2 framebuffer-con2-alldata</key>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-alldata</key>
 				<data>AQUKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAgAAAA</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
@@ -434,42 +434,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>CPUFriend.kext</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/CPUFriend</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>CPUFriend.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>CPUFriendDataProvider.kext</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>CPUFriendDataProvider.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>BrightnessKeys.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
@@ -485,6 +449,24 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>BrightnessKeys.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AsusSMC.kext</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AsusSMC</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AsusSMC.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -539,6 +521,42 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>CPUFriend.kext</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CPUFriend</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CPUFriend.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>CPUFriendDataProvider.kext</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CPUFriendDataProvider.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -665,7 +683,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>67</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
 		<array/>
@@ -749,7 +767,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-wegnoegpu</string>
+				<string>-wegnoegpu igfxonln=1 </string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -821,13 +839,13 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02928701GUH69FFB</string>
+			<string>XX-CHANGE-ME-XX</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>ESIzAAAA</data>
+			<data>MPfF4+I2</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -835,9 +853,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro14,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02Z2CZ5H7JY</string>
+			<string>XX-CHANGE-ME-XX</string>
 			<key>SystemUUID</key>
-			<string>AA043F8D-33B6-4A1A-94F7-46972AAD0607</string>
+			<string>XX-CHANGE-ME-XX</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
