@@ -2,20 +2,23 @@
 
 ## Hardware specs
 
-|   Specifications    |                           Details                            |
-| :-----------------: | :----------------------------------------------------------: |
-|         CPU         | Intel Core [i7-7700HQ](https://ark.intel.com/content/www/it/it/ark/products/97185/intel-core-i7-7700hq-processor-6m-cache-up-to-3-80-ghz.html) |
-|        iGPU         |                         Intel HD 630                         |
-|         RAM         |                 4GB DDR4 2400MHz, up to 20GB                 |
-|     Audio Codec     |                        Realtek ALC255                        |
-| Stock wireless card |              Realtek RTL8821ae, NOT COMPATIBLE.              |
-|      Ethernet       |                     Realtek RTL8111 GbE                      |
-|      Trackpad       |                        FTC1010 (PS/2)                        |
-|      Keyboard       |                Standard Asus Keyboard (PS/2)                 |
-|   SD Card Reader    |                    Realtek SD Card Reader                    |
+|  Specifications  |                           Details                            |
+| :--------------: | :----------------------------------------------------------: |
+|   Audio Codec    |                        Realtek ALC255                        |
+|       CPU        | Intel Core [i7-7700HQ](https://ark.intel.com/content/www/it/it/ark/products/97185/intel-core-i7-7700hq-processor-6m-cache-up-to-3-80-ghz.html) |
+|     Chipset      |                      Intel HM170/HM175                       |
+|     Ethernet     |                 Realtek RTL8111 GbE Adapter                  |
+|    HDMI Audio    |               Intel CM238 HD Audio Controller                |
+|       iGPU       |                         Intel HD 630                         |
+|     Keyboard     |                Asus Standard Keyboard (PS/2)                 |
+|       RAM        |             4GB DDR4 2400MHz, up to 20GB (16+4)              |
+|  SD Card Reader  |              Realtek RTL8411B PCIe Card Reader               |
+|     Trackpad     |                        FTC1010 (PS/2)                        |
+|   WLAN - Stock   |                      Realtek RTL8821ae                       |
+| WLAN - Suggested |              Broadcom BCM94352HMB 802.11ac WLAN              |
 
-- Suggested wireless card: Azurewave AW-CE123H
-- Note: dGPU (nVidia GTX 950M is NOT supported)
+- Note: dGPU (nVidia GTX 950M) is NOT supported.
+- Note: in this EFI, the used Wireless card is the "suggested" one. Proper patches/kext are already added.
 
 ## Tested on
 
@@ -25,6 +28,7 @@
 
 - Audio (Speakers + External devices)
 - Battery percentage (Optimized charging too)
+- Bluetooth*
 - Brightness (including brightness keys)
 - FN Keys (except F2 and F9 unless you use AsusSMCDaemon)
 - HDMI (ONLY IF CONNECTED **AFTER BOOTING**)
@@ -33,13 +37,16 @@
 - Sleep/Resume
 - Trackpad (with some gestures)
 - USB (both 2.0 and 3.1 gen2)
+- WIFI*
+
+#### Note: * refers to the BCM94352HMB card.
 
 ## What's not working
 
 - Boot through HDMI (ToDo)
 - Internal Microphone (ToDo)
 - HDMI audio (ToDo)
-- WiFi (as expected, check [here](#hardware-specs))
+- WiFi (stock card, check [here](#hardware-specs))
 
 ## How to use it
 
