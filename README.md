@@ -61,6 +61,7 @@
 
 - I've already added the latest HoRNDIS kext in order to use an Android phone (via USB tethering) for connecting to internet.
 - If you can't type proper characters using your USB keyboard, try switching Key Rollover method (if any), from N-Key rollover to 6-Key rollover. Seems that MacOS has some problems in recognizing correct characters while using N-Key rollover.
+- In order to check which I've changed, check commit's description. It contains a short (but useful) recap of what I've done in that commit.
 
 ## Credits
 
