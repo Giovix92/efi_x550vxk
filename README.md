@@ -30,6 +30,7 @@
 - Battery percentage (Optimized charging too)
 - Bluetooth*
 - Brightness (including brightness keys)
+- Ethernet
 - FN Keys (except F2 and F9 unless you use AsusSMCDaemon)
 - HDMI (ONLY IF CONNECTED **AFTER BOOTING**)
 - iGPU (full QE/CI)
