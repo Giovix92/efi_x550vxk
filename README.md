@@ -1,4 +1,4 @@
-# EFI for X550VX(K), MacOS Big Sur
+# EFI for X550VX(K)
 
 ## Hardware specs
 
@@ -22,7 +22,8 @@
 
 ## Tested on
 
-- OS: MacOS Big Sur (11.6/11.6.x)
+- MacOS Big Sur (11.6 - 11.6.1)
+- MacOS Monterey (12.0.1)
 
 ## What's working:
 
