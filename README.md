@@ -4,7 +4,7 @@
 
 |  Specifications  |                           Details                            |
 | :--------------: | :----------------------------------------------------------: |
-|   Audio Codec    |                        Realtek ALC255                        |
+|   Audio Codec    |                  Realtek ALC255 (alcid=13)                   |
 |       CPU        | Intel Core [i7-7700HQ](https://ark.intel.com/content/www/it/it/ark/products/97185/intel-core-i7-7700hq-processor-6m-cache-up-to-3-80-ghz.html) |
 |     Chipset      |                      Intel HM170/HM175                       |
 |     Ethernet     |                 Realtek RTL8111 GbE Adapter                  |
@@ -35,6 +35,7 @@
 - FN Keys (except F2 and F9 unless you use AsusSMCDaemon)
 - HDMI (ONLY IF CONNECTED **AFTER BOOTING**)
 - iGPU (full QE/CI)
+- Internal microphone
 - Keyboard
 - Sleep/Resume
 - Trackpad (with some gestures)
@@ -46,9 +47,7 @@
 ## What's not working
 
 - Boot through HDMI (ToDo)
-- Internal Microphone (ToDo)
 - HDMI audio (ToDo)
-- WiFi (stock card, check [here](#hardware-specs))
 
 ## How to use it
 

@@ -1040,11 +1040,11 @@
 					<key>PinchZoom</key>
 					<true/>
 					<key>PinchZoomDelta</key>
-					<integer>300</integer>
+					<integer>150</integer>
 					<key>Rotation</key>
 					<true/>
 					<key>RotationDelta</key>
-					<integer>350</integer>
+					<integer>150</integer>
 					<key>RotationMaxCFingDelta</key>
 					<integer>85</integer>
 					<key>RotationMinCFingIdleTime</key>
@@ -1172,7 +1172,7 @@
 						<key>2FHorizontalScroll</key>
 						<true/>
 						<key>2FScrollAccelMode</key>
-						<integer>0</integer>
+						<integer>2</integer>
 						<key>2FVerticalScroll</key>
 						<true/>
 						<key>Auto2FingScroll</key>
@@ -1302,7 +1302,7 @@
 					<key>3FingerSwipeRightAction</key>
 					<integer>6</integer>
 					<key>3FingerSwipeUpAction</key>
-					<integer>3</integer>
+					<integer>8</integer>
 					<key>3FingerSwipes</key>
 					<true/>
 					<key>4FingerSwipeDownAction</key>
@@ -1334,7 +1334,7 @@
 					<key>EdgeSwipeTop</key>
 					<integer>10</integer>
 					<key>EdgeSwipes</key>
-					<false/>
+					<true/>
 					<key>EdgeSwipes2Ways</key>
 					<false/>
 					<key>EdgeSwipesResetPointer</key>
@@ -1374,9 +1374,9 @@
 					<key>3FingersTapAction</key>
 					<integer>33</integer>
 					<key>4FingersTapAction</key>
-					<integer>4</integer>
-					<key>5FingersTapAction</key>
 					<integer>5</integer>
+					<key>5FingersTapAction</key>
+					<integer>4</integer>
 					<key>CornerTapAreaHeight</key>
 					<integer>10</integer>
 					<key>CornerTapAreaLength</key>
