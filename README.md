@@ -1,4 +1,4 @@
-# EFI for X550VX(K)
+# EFI for ASUS K550VX (X550VX(K))
 
 ## Hardware specs
 
@@ -30,7 +30,7 @@ Notes:
 ## Tested on
 
 - macOS Big Sur (11.6 - 11.6.1)
-- macOS Monterey (12.0.1 - ?)
+- macOS Monterey (12.0.1 - 12.2.1)
 
 ## What's working:
 
@@ -46,7 +46,7 @@ Notes:
 - iGPU (full QE/CI)
 - Internal microphone
 - Keyboard
-- Sleep/Resume
+- Sleep/Resume**
 - Trackpad (with some gestures)
 - USB (both 2.0 and 3.1 gen2)
 - WIFI*
@@ -54,11 +54,11 @@ Notes:
 #### Notes: 
 
 - \* refers to the BCM94352HMB card.
-- \** After booting through HDMI, you'll experience a "glitch". Just open/close the lid and the issue disappears.
+- \** After booting/resuming through HDMI, you'll experience a "glitch". Just open/close the lid and the issue disappears.
 
 ## What's not working
 
-- In-call low mic
+- After sleep/resume, Bluetooth may become unavailable. That's a known Monterey bug, I can't do anything to address it. Meanwhile, you can just reboot to let it work again.
 
 ## How to use it
 
@@ -75,8 +75,9 @@ Notes:
 - If you can't type proper characters using your USB keyboard, try switching Key Rollover method (if any), from N-Key rollover to 6-Key rollover. Seems that macOS has some problems in recognizing correct characters while using N-Key rollover.
 - The EFI does actually boot across all tested versions. Bluetooth with the mentioned card works too in all versions.
 - `AppleXcpmCfgLock` is set to true for better compatibility across all BIOS versions. Though, after unlocking the `MSR 0xE2 register` (aka CFG Unlock), you can disable it for better performances.
-- Virtualisation is enabled by default, you can keep VT-d on.
+- Virtualisation is enabled by default, you can keep VT-d on. VMWare works fine too!
 - The kext `ApplePS2SmartTouchPad.kext` has been tuned properly to work with a natural scrolling method, plus some gestures has been enabled. You can tune it by yourself by editing the `Info.plist` file inside the kext itself.
+- You can use [Camera Controller](https://github.com/Itaybre/CameraController) in order to tune the integrated webcam (eg. increase brightness).
 
 ## Credits
 
